@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html ,body {
+    background-color: #ffbb00;
+}
+
+.app{
+    width: 1200px;
+    height: 600px;
+    background-color: #f2f2f2;
+    margin: 155px auto;
+    border-radius: 10px;
+    padding: 80px;
+}
+
+.app__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__header_title{
+    font-size: 24px;
+    font-weight: 700;
+
+    p{
+        padding-top: 5px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.app__header_btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.app__header_btn_controlPrev, .app__header_btn_controlNext{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    &:disabled{
+        cursor: not-allowed;
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    span{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.app__header_btn_control-lArrow{
+    font-size: 20px;
+    color: #9BD609;
+}
+
+.app__header_btn_control-rArrow{
+    font-size: 20px;
+    color: #9BD609;
+}
+
+.app__main{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.app__main_card{
+    margin-top: 50px;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.app__main_card_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__main_card_body{
+    margin-top: 20px;
+
+    span{
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    p{
+        margin-top: 10px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
